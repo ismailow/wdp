@@ -30,9 +30,11 @@ body{
     align-items: center;
 }
 
-.header__logo{
+.header__logo-link{
     font-size: 2.5rem;
     font-weight: 700;
+    color: #212121;
+    text-decoration: none;
 }
 
 .nav{
@@ -55,6 +57,7 @@ body{
     font-weight: 500;
     color: #212121;
     text-decoration: none;
+    transition: 10s;
 }
 
 .menu__link:hover{
@@ -64,4 +67,77 @@ body{
 .search__icon{
     width: 20px;
     height: 20px;
+}
+
+
+
+/* !===Intro=== */
+.intro{
+    background: #0a0f10 url('../img/intro.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 70px;
+
+}
+
+.intro__title{
+    margin-top: 180px;
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.intro__subtitle{
+    margin-top: 40px;
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.intro__buttons{
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro__btn{
+    width: 220px;
+    height: 70px;
+    background-color: inherit;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    border: 3px solid #fff;
+    margin-left: 25px;
+    transition: .2s;
+}
+
+.intro__btn:first-child{
+    margin-left: 0;
+}
+
+.intro__btn:hover{
+    background-color: #00897b;
+    border-color: #00897b;
+}
+
+.intro__down{
+    margin: 100px auto;
+    width: 25px;
+    height: 25px;
+    background-color: inherit;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    transform: rotate(-45deg);
+}
+
+.intro__down:hover{
+    cursor: pointer;
 }
