@@ -17,6 +17,21 @@ body{
 
 
 
+/* !===Text=== */
+.text-block{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 37px;
+}
+
+
+
 /* !===Header=== */
 .header{
     background-color: #fff;
@@ -140,4 +155,39 @@ body{
 
 .intro__down:hover{
     cursor: pointer;
+}
+
+
+
+/* !===About=== */
+.about__inner{
+    padding: 125px 0;
+}
+
+.about__block{
+    margin-top: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 370px;
+}
+
+.about__title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about__subtitle{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.3;
 }
