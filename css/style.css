@@ -359,3 +359,112 @@ body{
     background-color: #00897b;
     color: #fff;
 }
+
+
+
+/* !===Pricing=== */
+.pricing{
+    background-color: #f0f1f1;
+}
+
+.pricing__inner{
+    padding: 125px 0;
+}
+
+.pricing__block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+.pricing__item{
+    width: 100%;
+    max-width: 370px;
+    overflow: hidden;
+    background-color: #fff;
+    padding-bottom: 65px;
+    transition: .2s;
+}
+
+.pricing__item:hover{
+    box-shadow: 0 6px 15px 0px black;
+}
+
+.pricing__header{
+    position: relative;
+    z-index: 1000;
+    background-color: #3949ab;
+    color: #fff;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.bevel{
+    position: absolute;
+    
+    background-color: #3949ab;
+    width: 103%;
+    height: 70px;
+    position: absolute;
+    top: 105px;
+    right: 0;
+    transform: rotate(-6deg);
+}
+
+.pricing__title{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.pricing__price{
+    position: relative;
+    color: #fff;
+    z-index: 500;
+}
+
+.dollar{
+    font-size: 2.5rem;
+    vertical-align: 15px;
+}
+
+.price{
+    font-size: 5rem;
+}
+
+.tiem{
+    font-size: 1.7rem;
+}
+
+.pricing__inform{
+    margin-top: 70px;
+}
+
+.inform__item{
+    width: 178px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 14px;
+    margin-top: 37px;
+}
+
+.pricing__button{
+    width: 178px;
+    margin: 65px auto 0;
+}
+
+.pricing__btn{
+    background-color: inherit;
+    border: 2px solid #000;
+    width: 178px;
+    height: 60px;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.pricing__btn:hover{
+    color: #fff;
+    background-color: #00897b;
+    border-color: #00897b;
+}
