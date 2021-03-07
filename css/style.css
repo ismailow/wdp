@@ -374,6 +374,7 @@ body{
 .pricing__block{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 130px;
 }
 
@@ -467,4 +468,104 @@ body{
     color: #fff;
     background-color: #00897b;
     border-color: #00897b;
+}
+
+
+
+/* !===Team=== */
+.team__inner{
+    padding: 125px 0;
+}
+
+.team__block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 130px;
+}
+
+.team__item{
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__name{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.team__social{
+    display: flex;
+    margin-top: 35px;
+}
+
+.social__btn{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 29px;
+    padding: 9px 8px;
+    border-radius: 10px;
+    background-color: #f0f1f1;
+    transition: .2s;
+}
+
+.social__btn:last-child{
+    margin-right: 0;
+}
+
+.social__btn:hover{
+    background-color: #3949ab;
+}
+
+.social__icon{
+    height: 30px;
+    width: 30px;
+    fill: #00897b;
+    transition: .2s;
+}
+
+.social__btn:hover .social__icon {
+    fill: #fff;
+}
+
+.team__dots{
+    margin-top: 125px;
+    display: flex;
+    justify-content: center;
+}
+
+.team__dot{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00897b;
+}
+
+.team__dot::before{
+    content: "";
+    position: absolute;
+    right: 25px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #3949ab;
+}
+
+.team__dot::after{
+    content: "";
+    position: absolute;
+    left: 25px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00897b;
 }
