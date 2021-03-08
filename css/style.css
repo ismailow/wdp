@@ -337,13 +337,13 @@ body{
     display: flex;
 }
 
-.portfolio__button-block{
+.button-block{
     margin-top: 130px;
     display: flex;
     align-items: center
 }
 
-.portfolio__button{
+.button{
     text-align: center;
     background-color: inherit;
     border: 2px solid #00897b;
@@ -355,7 +355,7 @@ body{
     font-weight: 600;
 }
 
-.portfolio__button:hover{
+.button:hover{
     background-color: #00897b;
     color: #fff;
 }
@@ -568,4 +568,64 @@ body{
     height: 15px;
     border-radius: 50%;
     background-color: #00897b;
+}
+
+
+
+/* !===Blog=== */
+.blog{
+    background-color: #e4fdf9;
+}
+
+.blog__inner{
+    padding: 125px 0;
+}
+
+.blog__block{
+    margin-top: 130px;
+}
+
+.blog__row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__description{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 62px;
+    text-align: left;
+    margin-right: 140px;
+}
+
+.description__title{
+    color: #00897b;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.description__infromation{
+    display: flex;
+}
+
+.information__item{
+    display: flex;
+}
+
+.blog__icon{
+    width: 18px;
+    height: 18px;
+    margin-right: 14px;
+}
+
+.information__text{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+.description__text{
+    margin-top: 28px;
 }
