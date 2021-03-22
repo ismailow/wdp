@@ -104,6 +104,39 @@ body{
     height: 20px;
 }
 
+.burger__button{
+    display: none;
+    flex-direction: column;
+    border: none;
+}
+
+.burger__line{
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background-color: #212121;
+}
+
+.burger__line::after{
+    content: "";
+    bottom: 7px;
+    left: 0;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #212121;
+}
+
+.burger__line::before{
+    content: "";
+    top: 7px;
+    left: 0;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #212121;
+}
+
 
 
 /* !===Intro=== */
@@ -516,8 +549,10 @@ body{
 }
 
 .team__social{
+    width: 100%;
     display: flex;
     margin-top: 35px;
+    justify-content: space-between;
 }
 
 .social__btn{
@@ -526,7 +561,6 @@ body{
     align-content: center;
     width: 50px;
     height: 50px;
-    margin-right: 29px;
     padding: 9px 8px;
     border-radius: 10px;
     background-color: #f0f1f1;
@@ -728,11 +762,14 @@ body{
     border: none;
     border-radius: 10px;
     padding-left: 15px;
+    font-size: 2rem;
+    color: #212121;
 }
 
 .info::placeholder{
     font-size: 2rem;
     color: #212121;
+    opacity: .7;
 }
 
 .message{
@@ -753,7 +790,7 @@ body{
 .form__button-block{
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .form__button{
@@ -828,7 +865,26 @@ body{
     }
 }
 
+@media (max-width: 1024px){
+    .blog__image{
+        width: 95%;
+    }
+
+    .info{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .message{
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 1000px){
+    html{
+        font-size: 9px;
+    }
+
     /* !===About=== */
     .about__inner{
         padding: 100px 0;
@@ -928,5 +984,165 @@ body{
 
     .info{
         width: 460px;
+    }
+}
+
+@media (max-width: 900px){
+    .burger__button{
+        display: flex;
+    }
+
+    .header__inner{
+        position: relative;
+    }
+
+    .nav{
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        margin: auto;
+        background-color: #fff;
+        margin-right: 0;
+        padding: 10px;
+        border-bottom: 1px solid #212121;
+    }
+
+    .nav__search{
+        display: none;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .menu__item{
+        padding: 10px 0;
+    }
+
+    .nav.show{
+        display: flex;
+    }
+}
+
+@media (max-width: 800px){
+    .info{
+        width: 100%;
+    }
+
+    .about__block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about__item{
+        margin-top: 30px;
+    }
+
+    .about__item:first-child{
+        margin-top: 0;
+    }
+
+    .pricing__item:first-child{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 425px){
+    html{
+        font-size: 9px;
+    }
+
+    .intro__buttons{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .intro__btn{
+        margin: 20px 0 0;
+    }
+
+    .portfolio__buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portfolio__btn{
+        margin: 20px 0 0;
+        width: 200px;
+    }
+
+    .portfolio__btn:first-child{
+        margin-top: 0;
+    }
+
+    .form__button{
+        width: 200px;
+    }
+}
+
+@media (max-width: 375px){
+    .description__infromation{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .information__item{
+        margin-top: 10px;
+    }
+
+    .information__item:first-child{
+        margin-top: 0;
+    }
+
+    .teammate{
+        width: 100%;
+    }
+
+    .portfolio__image{
+        width: 100%;
+    }
+
+    .portfolio__cover{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 320px){
+    .team__item:first-child{
+        margin-bottom: 40px;
+    }
+    
+    .intro__title h1{
+        font-size: 40px;
+    }
+
+    .header .container{
+        width: 100%;
+    }
+
+    .header__inner{
+        width: 100%;
+    }
+
+    .blog__row{
+        width: 100%;
+    }
+
+    .info{
+        height: 50px;
+    }
+
+    .message{
+        height: 140px;
+    }
+
+    .form__button{
+        width: 100%;
     }
 }
